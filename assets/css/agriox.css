@@ -3506,6 +3506,8 @@ button {
   border-radius: 10px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  height: 400px;
+  max-height : 500px;
 }
 
 .testimonials-one__single:hover {
@@ -6815,6 +6817,11 @@ button {
   width: 100%;
 }
 
+.about-three__img-box-img-inner img{
+  width: 100%;
+  height : 700px;
+}
+
 .about-three__img-box-img-inner::before {
   position: absolute;
   top: 0;
@@ -7242,7 +7249,6 @@ button {
   font-size: 14px;
   color: #727d73;
   font-weight: 400;
-  text-transform: capitalize;
   font-family: var(--agriox-font, "DM Sans", sans-serif);
 }
 
@@ -7490,7 +7496,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   background: #ffffff;
-  padding: 60px 115px 60px;
+  padding: 60px 60px 60px;
   -webkit-box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
@@ -10226,6 +10232,11 @@ Sidebar
   background-color: #181818;
 }
 
+.gallery-one__item__image img {
+  width : 100%;
+  height: 400px;
+}
+
 .gallery-one__item__image > img {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -10601,6 +10612,7 @@ Sidebar
   border-radius: 10px;
   position: relative;
   margin-bottom: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); /* Shadow awal */
 }
 
 .shop-one__image img {
@@ -10608,6 +10620,11 @@ Sidebar
   opacity: 1;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  transform: scale(1); /* Initial scale */
+}
+
+.shop-one__image img:hover {
+  transform: scale(1.2); /* Zoom effect */
 }
 
 .shop-one__item:hover .shop-one__image img {
@@ -13230,3 +13247,22 @@ body.boxed-wrapper {
   }
 }
 
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  display: none; /* Sembunyikan notifikasi saat awal */
+}
+
+.success-message.show {
+  display: block;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
