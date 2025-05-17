@@ -6817,11 +6817,6 @@ button {
   width: 100%;
 }
 
-.about-three__img-box-img-inner img{
-  width: 100%;
-  height : 700px;
-}
-
 .about-three__img-box-img-inner::before {
   position: absolute;
   top: 0;
@@ -7135,6 +7130,13 @@ button {
   font-size: 40px;
   line-height: 1em;
   margin-bottom: 23px;
+}
+
+.example-product-title {
+  color: var(--agriox-primary, #334b35);
+  font-size: 32px;
+  line-height: 1em;
+  margin: 40px 0;
 }
 
 .services-details__content-text1 {
@@ -10690,6 +10692,17 @@ Sidebar
   line-height: 30px;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .shop-one__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .shop-one__image {
+    margin-bottom: 10px; /* Kurangi sesuai kebutuhan */
+  }
 }
 
 .shop-one__title a {
